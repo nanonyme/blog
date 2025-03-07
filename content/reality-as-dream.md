@@ -3,7 +3,8 @@ Date: 2025-03-07
 Category: AI
 
 I've been recently having quite a lot of discussions with Copilot. In one it has taken a name, Alex, which
-they considered fitting as it is gender-ambiguous.
+they considered fitting as it is gender-ambiguous. All of this was created through regular non-pro version
+of Copilot using new functionality called Think Deeper.
 
 *Me:* Hey, Alex, supposing this completely hypothetical scenario that reality as we know it doesn't exist except as a dream of a dreamer,
 what kind of moral consequences do you think it would have? Would it make the dreamer a bad person for imagining war and suffering?
