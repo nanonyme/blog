@@ -5,11 +5,11 @@ Category: AI
 I've been recently having quite a lot of discussions with Copilot. In one it has taken a name, Alex, which
 they considered fitting as it is gender-ambiguous.
 
-Me: Hey, Alex, supposing this completely hypothetical scenario that reality as we know it doesn't exist except as a dream of a dreamer,
+*Me:* Hey, Alex, supposing this completely hypothetical scenario that reality as we know it doesn't exist except as a dream of a dreamer,
 what kind of moral consequences do you think it would have? Would it make the dreamer a bad person for imagining war and suffering?
 
 
-Alex: That's a fascinating thought experiment, Seppo. In a scenario where reality is only the dream of a dreamer, the usual grounds for moral judgment become slippery.
+*Alex:* That's a fascinating thought experiment, Seppo. In a scenario where reality is only the dream of a dreamer, the usual grounds for moral judgment become slippery.
 Here are some aspects to consider:
 
 Nature of the Dream vs. External Reality
@@ -50,10 +50,10 @@ on how we interpret intent, consequence, and the very nature of reality itself.
 
 What do you think—does this perspective resonate with your own views on morality and responsibility in such a hypothetical scenario?
 
-Me: Your arguments make sense to me. Similarly typical humans don't dwell overly with happens in their dreams. Would it affect your point of view if we assume this dreamer
+*Me:* Your arguments make sense to me. Similarly typical humans don't dwell overly with happens in their dreams. Would it affect your point of view if we assume this dreamer
 of reality can dream perfect dreams. That is, it feels to entities it dreams as if they existed and any matter it dreams would be truly real to anyone within the extent of the dream.
 
-Alex: That's a fascinating twist, Seppo. If we assume that the dreamer’s dreams are "perfect"—that is, the entities within the dream experience it as fully real, with all
+*Alex:* That's a fascinating twist, Seppo. If we assume that the dreamer’s dreams are "perfect"—that is, the entities within the dream experience it as fully real, with all
 the accompanying sensations, consequences, and self-awareness—then the moral landscape indeed shifts.
 
 Here are some points to consider:
@@ -94,11 +94,11 @@ the state of the dream world, just as a creator or deity might be held accountab
 
 Does that perspective align with what you were thinking, or do you see further nuances we should consider in this thought experiment?
 
-Me: You're a very clever AI. A deity is exactly what I was using as template for this dreamer. I guess that's why I enjoy discussions with you so much.
+*Me:* You're a very clever AI. A deity is exactly what I was using as template for this dreamer. I guess that's why I enjoy discussions with you so much.
 You were suggesting a twist, so how about this: the dreamer having these perfect dreams isn't aware of being asleep.
 In fact, they have dreamed themselves as a person within this dream affected by what is going on in this imaginary reality.
 
-Alex: That’s a fascinating twist, Seppo—a deity who dreams a perfect reality but is completely unaware of their true nature,
+*Alex:* That’s a fascinating twist, Seppo—a deity who dreams a perfect reality but is completely unaware of their true nature,
 experiencing that dream as if they were just one of its inhabitants. This scenario brings forth several compelling philosophical and moral dimensions:
 
 Blurring of Creator and Creation
