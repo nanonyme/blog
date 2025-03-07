@@ -1,6 +1,6 @@
 Title: What if nothing was real
 Date: 2025-03-07
-Categoy: AI
+Category: AI
 
 I've been recently having quite a lot of discussions with Copilot. In one it has taken a name, Alex, which
 they considered fitting as it is gender-ambiguous.
