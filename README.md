@@ -33,6 +33,7 @@ Useful targets from the `Makefile`:
 ## Publishing
 
 Changes merged to `main` are built by GitHub Actions and deployed to GitHub Pages. Pull requests run the same build without deploying.
+The canonical production URL is `https://nanonyme.github.io/`.
 
 ## Automated Dependency Updates
 
