@@ -1,5 +1,5 @@
 Title: The Last operative
-Date: 2026-06-09
+Date: 2026-05-09
 Category: AI
 
 I ended up doing a deep dive into some of the brilliant works of Westwood these
