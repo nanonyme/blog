@@ -49,12 +49,12 @@ Prerequisites:
 2. Fill in the required inputs:
 	- `title` (required)
 	- `filename` (required, must end with `.md`, path is always inside `content/`)
-	- `category` (optional)
+	- `tags` (optional, comma-separated)
 3. The workflow validates the filename and fails if `content/<filename>` already exists.
 4. On success it creates a skeleton post with this header order:
 	- `Title`
 	- `Date` (auto-generated as current date in `YYYY-MM-DD`)
-	- `Category` (always included, even when empty)
+	- `Tags` (always included, even when empty)
 5. The workflow commits the new file on an automation branch and opens a draft pull request targeting `main`.
 
 ## Automated Dependency Updates
