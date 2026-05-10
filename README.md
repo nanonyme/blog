@@ -40,6 +40,11 @@ The canonical production URL is `https://nanonyme.github.io/`.
 
 Use the **Create Draft Post** manual workflow to scaffold a new post without cloning the repository locally.
 
+Prerequisites:
+- Repository setting **Actions -> General -> Workflow permissions** should allow read and write permissions.
+- If your repository or organization blocks PR creation by the default workflow token, also enable **Allow GitHub Actions to create and approve pull requests**.
+- Optional fallback: create repository secret `POST_WORKFLOW_TOKEN` with a fine-grained PAT that has `contents: write` and `pull requests: write`. The workflow uses this secret automatically when present.
+
 1. Open the Actions tab and run **Create Draft Post**.
 2. Fill in the required inputs:
 	- `title` (required)

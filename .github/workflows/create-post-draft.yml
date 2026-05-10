@@ -92,7 +92,7 @@ jobs:
       - name: Create draft pull request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.POST_WORKFLOW_TOKEN || github.token }}
           branch: ${{ steps.create.outputs.branch_name }}
           delete-branch: true
           title: "New post: ${{ github.event.inputs.title }}"
