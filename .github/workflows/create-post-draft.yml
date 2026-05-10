@@ -11,8 +11,8 @@ on:
         description: Filename inside content/ (must end with .md)
         required: true
         type: string
-      category:
-        description: Optional category
+      tags:
+        description: Optional tags (comma-separated)
         required: false
         default: ""
         type: string
@@ -40,7 +40,7 @@ jobs:
         env:
           TITLE: ${{ github.event.inputs.title }}
           FILENAME: ${{ github.event.inputs.filename }}
-          CATEGORY: ${{ github.event.inputs.category }}
+          TAGS: ${{ github.event.inputs.tags }}
         run: |
           set -euo pipefail
 
@@ -69,10 +69,10 @@ jobs:
           {
             printf 'Title: %s\n' "$TITLE"
             printf 'Date: %s\n' "$TODAY"
-            if [[ -n "$CATEGORY" ]]; then
-              printf 'Category: %s\n' "$CATEGORY"
+            if [[ -n "$TAGS" ]]; then
+              printf 'Tags: %s\n' "$TAGS"
             else
-              printf 'Category:\n'
+              printf 'Tags:\n'
             fi
             printf '\n'
           } > "$TARGET_PATH"
@@ -92,7 +92,7 @@ jobs:
       - name: Create draft pull request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.POST_WORKFLOW_TOKEN || github.token }}
           branch: ${{ steps.create.outputs.branch_name }}
           delete-branch: true
           title: "New post: ${{ github.event.inputs.title }}"
@@ -101,7 +101,7 @@ jobs:
 
             - File: `${{ steps.create.outputs.target_path }}`
             - Title: `${{ github.event.inputs.title }}`
-            - Category: `${{ github.event.inputs.category }}`
+            - Tags: `${{ github.event.inputs.tags }}`
           draft: true
           base: main
           commit-message: "Create post skeleton: ${{ steps.create.outputs.target_path }}"

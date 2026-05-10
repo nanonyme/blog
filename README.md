@@ -40,16 +40,21 @@ The canonical production URL is `https://nanonyme.github.io/`.
 
 Use the **Create Draft Post** manual workflow to scaffold a new post without cloning the repository locally.
 
+Prerequisites:
+- Repository setting **Actions -> General -> Workflow permissions** should allow read and write permissions.
+- If your repository or organization blocks PR creation by the default workflow token, also enable **Allow GitHub Actions to create and approve pull requests**.
+- Optional fallback: create repository secret `POST_WORKFLOW_TOKEN` with a fine-grained PAT that has `contents: write` and `pull requests: write`. The workflow uses this secret automatically when present.
+
 1. Open the Actions tab and run **Create Draft Post**.
 2. Fill in the required inputs:
 	- `title` (required)
 	- `filename` (required, must end with `.md`, path is always inside `content/`)
-	- `category` (optional)
+	- `tags` (optional, comma-separated)
 3. The workflow validates the filename and fails if `content/<filename>` already exists.
 4. On success it creates a skeleton post with this header order:
 	- `Title`
 	- `Date` (auto-generated as current date in `YYYY-MM-DD`)
-	- `Category` (always included, even when empty)
+	- `Tags` (always included, even when empty)
 5. The workflow commits the new file on an automation branch and opens a draft pull request targeting `main`.
 
 ## Automated Dependency Updates
