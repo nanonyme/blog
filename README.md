@@ -10,6 +10,7 @@ This repository contains the source for a Pelican-powered blog published on GitH
 - `Makefile` provides the main build and preview targets.
 - `.github/workflows/pelican-pr.yml` builds the site for pull requests.
 - `.github/workflows/pelican-pages.yml` builds and deploys the site from `main`.
+- `.github/workflows/create-post-draft.yml` creates a draft post file and opens a draft pull request.
 
 ## Local Development
 
@@ -34,6 +35,22 @@ Useful targets from the `Makefile`:
 
 Changes merged to `main` are built by GitHub Actions and deployed to GitHub Pages. Pull requests run the same build without deploying.
 The canonical production URL is `https://nanonyme.github.io/`.
+
+## Create Posts from GitHub Actions
+
+Use the **Create Draft Post** manual workflow to scaffold a new post without cloning the repository locally.
+
+1. Open the Actions tab and run **Create Draft Post**.
+2. Fill in the required inputs:
+	- `title` (required)
+	- `filename` (required, must end with `.md`, path is always inside `content/`)
+	- `category` (optional)
+3. The workflow validates the filename and fails if `content/<filename>` already exists.
+4. On success it creates a skeleton post with this header order:
+	- `Title`
+	- `Date` (auto-generated as current date in `YYYY-MM-DD`)
+	- `Category` (always included, even when empty)
+5. The workflow commits the new file on an automation branch and opens a draft pull request targeting `main`.
 
 ## Automated Dependency Updates
 
